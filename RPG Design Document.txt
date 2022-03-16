@@ -1,3 +1,4 @@
+By Jared Mulconry
 Make a turn-based Combat RPG
 
 .Classes.
