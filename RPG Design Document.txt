@@ -1,0 +1,58 @@
+Make a turn-based Combat RPG
+
+.Classes.
+Character
+Weapon
+
+.Character.
+-name:string
+-hitpoints:float
+-defenceRating:float
+-sword:Weapon
++float ComputeBaseDamage()
++void ApplyBaseDamage(float dmg)
++string Name {get}
++float HP {get}
++float Defence {get}
++string Weapon {get}
+
+.Weapon.
++name:string
++baseAttackRating:float
+
+.Game Mechanics.
+This is a Console game.
+Your game will include 2 teams of 3 characters.
+At the start of the game, each character shall be given a 
+weapons to equip for battle.
+Each player may provide a name for each character on their team.
+Starting defence and hitpoints for all characters can be the same.
+
+Team 1 will attack first, followed by Team 2.
+If a character's health drops to or below 0, they are eliminated from
+the battle and will no longer be given a chance to attack. A character's
+elimination shall be anounced.
+Once all characters on a team are eliminated, a winner shall be declared.
+
+Each character from a team will perform an attack before the other team
+gets their turn.
+You will choose a character on the opposing team to attack by
+typing a number between 1 and 3.
+If your chosen character to attack has already been eliminated, or if an 
+invalid choice is given, the player must choose a different character to 
+attack.
+
+.Challenges.
+Add a recoveryTurns stat to each weapon that controls how many 
+turns a character has to wait after attacking with their weapon.
+Add a speed stat to each character that will affect the order 
+in which characters attack within a team.
+Add the ability for the speed stat to also impact turn order 
+across teams (Characters from any team can attack in any order based
+on their stats).
+
+Symbols
+public: +
+private: -
+method: <return type> <method name> (<parameter list>)
+property: <type> <name> {<get,set>}
